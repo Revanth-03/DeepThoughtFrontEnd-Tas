@@ -1,0 +1,163 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+/* header */
+
+nav {
+  padding: 10px;
+  background: #f0f0f0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Main Container */
+.hidden {
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  display: none;
+  transition: height 5s, width 5s, display 5s;
+}
+
+.rotated {
+  transform: rotateY(180deg);
+}
+
+.display-block {
+  display: block;
+  transition: all 2s;
+}
+
+.list-element {
+  font-weight: 700;
+}
+
+#assets-container.visible {
+  position: absolute;
+  width: 392px;
+  height: 692px;
+  z-index: 1000;
+  margin-top: -12px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 1px 1px 0px #00000040;
+}
+
+.asset-item-list {
+  margin-bottom: 10px;
+  width: 392px;
+  padding: 10px;
+  background: white;
+}
+
+.main_container {
+  padding: 0 30px;
+  margin-top: 20px;
+}
+
+#jounery-board {
+  font-family: Poppins;
+  font-size: 16px;
+  width: 210px;
+  height: 40px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.forward_arrow {
+  height: 40px;
+  width: 380px;
+  display: inline-flex;
+  justify-content: space-between;
+}
+#logo {
+  transition: transform 2s ease-in-out;
+}
+
+.forward_arrow img {
+  height: inherit;
+}
+
+.title_container {
+  display: flex;
+  justify-content: space-between;
+  color: #0029ff;
+}
+
+.title_container button {
+  height: 40px;
+  padding: 0px 20px;
+  margin: auto;
+  margin-right: 0;
+  border: 0px;
+  border-radius: 5px;
+  background: #0029ff;
+  color: white;
+  font-size: 1rem;
+}
+
+.role-exploration {
+  font-family: Poppins;
+  padding: 13px;
+  background: #e9ecef;
+  border-radius: 5px;
+  margin-top: 23px;
+}
+
+.role-exploration p {
+  line-height: 21px;
+}
+
+.container_wrapper {
+  padding: 1.7em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.assets-item {
+  width: 480px;
+  height: 580px;
+  margin: auto auto 70px auto;
+  overflow: hidden;
+  box-shadow: 0px -4px 4px 0px #00000040;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  border-radius: 15px;
+}
+
+.assets-item .asset-title {
+  background: #000000;
+  color: white;
+  border-radius: 15px 15px 0px 0px;
+  width: 100%;
+  font-family: Open Sans;
+  font-size: 16px;
+  padding: 10px 0;
+  line-height: 21.79px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.assets-item *:not(.asset-title, .info, b, .asset-video) {
+  padding: 20px;
+}
+
+.info {
+  border-radius: 50%;
+  padding: 5px;
+  background: white;
+  color: black;
+  cursor: arrow;
+  user-select: none;
+  float: right;
+  margin-top: -5px;
+  margin-right: 10px;
+}
+
+.asset-video {
+  width: 480px;
+  height: 291px;
+}
